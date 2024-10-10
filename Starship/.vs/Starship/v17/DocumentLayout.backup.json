@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\Work\\Starship\\Starship\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\selectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\selectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SelectController.cs",
+              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SelectController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SelectController.cs",
+              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SelectController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SelectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T22:30:23.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlanetContoller.cs",
+              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\PlanetContoller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlanetContoller.cs",
+              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\PlanetContoller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlanetContoller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T21:59:29.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SpaceshipContoller.cs",
+              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SpaceshipContoller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipContoller.cs",
+              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SpaceshipContoller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceshipContoller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T21:58:30.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CameraController.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
