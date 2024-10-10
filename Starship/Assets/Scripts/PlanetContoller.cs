@@ -11,9 +11,7 @@ public class PlanetController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-                // Вызываем метод установки целевой точки в контроллере корабля, передавая координаты планеты
-             spaceshipController.SetTargetPoint(transform.position);
-
+             spaceshipController.SetTargetPoint(transform.position, gameObject);
         }
     }
 }

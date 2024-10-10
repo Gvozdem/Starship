@@ -30,6 +30,6 @@ public class CameraController : MonoBehaviour
 
         transform.position += transform.up * zoomSpeed * Time.deltaTime * Input.GetAxis("Mouse ScrollWheel");
 
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -100f, 30f), transform.position.z);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -100f, 50f), transform.position.z);
     }
 }

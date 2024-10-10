@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SpaceshipContoller.cs" />
     <Compile Include="Assets\Scripts\PlanetContoller.cs" />
-    <Compile Include="Assets\Scripts\SelectController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>
