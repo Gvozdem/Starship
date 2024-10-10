@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\Work\\Starship\\Starship\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlanetContoller.cs",
               "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\PlanetContoller.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlanetContoller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T21:59:29.301Z",
               "EditorCaption": ""
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipContoller.cs",
               "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SpaceshipContoller.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpaceshipContoller.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwD0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T21:58:30.66Z",
               "EditorCaption": ""

@@ -223,8 +223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170, y: -40}
-  m_SizeDelta: {x: 300, y: 30}
+  m_AnchoredPosition: {x: 200, y: -40}
+  m_SizeDelta: {x: 350, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89797305
 MonoBehaviour:
@@ -452,7 +452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62eee0f86817ee243a68b729ab7a38df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
 --- !u!1 &1015513114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2762921764261478860, guid: 12a8f24c67e94c379c1877090b48c017, type: 3}
@@ -593,14 +592,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spaceshipController: {fileID: 1015513119}
---- !u!135 &1139373283
-SphereCollider:
+--- !u!64 &1139373288
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139373276}
-  m_Material: {fileID: 13400000, guid: 05d638e33b304e34486966fab0da5653, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -611,9 +610,10 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 4
-  m_Center: {x: 0.27442214, y: 0.17269184, z: 0.33548954}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: ee6535f71428504449546c25c0673573, type: 3}
 --- !u!1 &1187005572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,12 +1074,16 @@ PrefabInstance:
       value: egipt
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee6535f71428504449546c25c0673573, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ee6535f71428504449546c25c0673573, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4005393
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee6535f71428504449546c25c0673573, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4005393
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee6535f71428504449546c25c0673573, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1126,8 +1130,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ee6535f71428504449546c25c0673573, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1139373283}
+      insertIndex: 3
+      addedObject: {fileID: 1139373288}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ee6535f71428504449546c25c0673573, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139373282}

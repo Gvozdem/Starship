@@ -73,7 +73,7 @@ public class SpaceshipController : MonoBehaviour
         if (minutes == 0 && seconds == 0)
             flightTimeText.text = "";
         else
-            flightTimeText.text = string.Format("Время полёта: {0:00}:{1:00}", minutes, seconds);
+            flightTimeText.text = string.Format("Оставшееся время полёта: {0:00}:{1:00}", minutes, seconds);
     }
 
     //Полёт
