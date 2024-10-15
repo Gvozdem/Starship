@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
+using UnityEngine.AI;
+using System.IO;
+using System;
 
 
 public class SpaceshipController : MonoBehaviour
@@ -15,56 +18,43 @@ public class SpaceshipController : MonoBehaviour
     private bool _isFlying = false;
 
     //Поворот
-    private float _rotationSpeed = 30f;
-    private float _rotationSpeedEnd = 20f;
-    
+    private float _rotationSpeed = 250f;
+
     //Время полёта
     private float _flightTime;
-    private float _totalFlightTime;
     public Text flightTimeText;
 
-    //Отображение линии полёта
-    private LineRenderer _trajectoryLine;
-    private GameObject _destinationObject;
+    //Новый путь
+    private NavMeshAgent _navMeshAgent;
+    private NavMeshPath path = new NavMeshPath();
+    private float pathLength = 0;
+
 
     //Находим нужный объект
     private void Start()
     {
+        //Для создания окна со временем
         flightTimeText = GameObject.Find("FlightTimeText").GetComponent<Text>();
+        
+        //Для работы с автопилотом
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+        _navMeshAgent.speed = _speed;
+        _navMeshAgent.angularSpeed = _rotationSpeed;
+        _navMeshAgent.acceleration = 999f;
 
-        _trajectoryLine = GetComponent<LineRenderer>();
-    }
-    private void UpdateTargetPoint()
-    {
-        _targetPoint = _destinationObject.transform.position;
     }
 
 
     //Задание координат куда лететь
-    public void SetTargetPoint(Vector3 targetPoint, GameObject destinationObject)
+    public void SetTargetPoint(Vector3 targetPoint)
     {
+        //Получаем точку куда летим и задаем в автопилот
         _targetPoint = targetPoint;
         _isFlying = true;
-
-        _destinationObject = destinationObject;
-
-        _totalFlightTime = Vector3.Distance(transform.position, _targetPoint) / _speed;
-        _flightTime = _totalFlightTime;
-
-        // Включаем отображение линии
-        _trajectoryLine.enabled = true;
-
-        UpdateTargetPoint();
+        _navMeshAgent.SetDestination(_targetPoint);
     }
 
-    // Рисуем линию траектории
-    private void DrawTrajectoryLine()
-    {
-        _trajectoryLine.SetPosition(0, transform.position);
-        _trajectoryLine.SetPosition(1, _targetPoint);
-    }
-
-    //Время полёта
+    //Время полёта (иногда немного задерживается)
     private void UpdateFlightTimeDisplay(float flightTime)
     {
         int minutes = Mathf.FloorToInt(flightTime / 60);
@@ -81,39 +71,19 @@ public class SpaceshipController : MonoBehaviour
     {
         if (_isFlying)
         {
-            MoveObj();
+            pathLength = _navMeshAgent.remainingDistance;
+            _navMeshAgent.speed = _speed;
+            _flightTime = pathLength / _speed;
 
             _flightTime -= Time.deltaTime;
-
             UpdateFlightTimeDisplay(_flightTime);
 
-            DrawTrajectoryLine();
-
-            if (Vector3.Distance(transform.position, _targetPoint) < 13f)
+            if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance < 20f)
             {
+                _navMeshAgent.speed = 0f;
                 _isFlying = false;
             }
         }
     }
 
-
-    //Перемещение корабля и поворот
-    private void MoveObj()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, _targetPoint, _speed * Time.deltaTime);
-
-        // Поворот корабля, чтобы он был перпендикулярен планете
-        if (Vector3.Distance(transform.position, _targetPoint) < 14f)
-        {
-            Quaternion currentRotation = transform.rotation;
-            Quaternion targetRotation = currentRotation * Quaternion.Euler(-90f, 0f, 0f);
-            transform.rotation = Quaternion.Lerp(currentRotation, targetRotation, _rotationSpeedEnd * Time.deltaTime);
-            _trajectoryLine.enabled = false;
-        }
-        else
-        {
-            // Иначе, просто поворачиваем корабль к точке полёта
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation((_targetPoint - transform.position).normalized), _rotationSpeed * Time.deltaTime);
-        }
-    }
 }
