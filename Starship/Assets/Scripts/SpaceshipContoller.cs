@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.AI;
 using System.IO;
 using System;
+using TMPro;
 
 
 public class SpaceshipController : MonoBehaviour
@@ -26,8 +27,12 @@ public class SpaceshipController : MonoBehaviour
 
     //Новый путь
     private NavMeshAgent _navMeshAgent;
-    private NavMeshPath path = new NavMeshPath();
-    private float pathLength = 0;
+
+    private NavMeshPath _path;
+    private float pathLength;
+
+    //Отображение пути
+    private LineRenderer _lineRenderer;
 
 
     //Находим нужный объект
@@ -35,23 +40,57 @@ public class SpaceshipController : MonoBehaviour
     {
         //Для создания окна со временем
         flightTimeText = GameObject.Find("FlightTimeText").GetComponent<Text>();
-        
+
+        _path = new NavMeshPath();
+
         //Для работы с автопилотом
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = _speed;
         _navMeshAgent.angularSpeed = _rotationSpeed;
         _navMeshAgent.acceleration = 999f;
 
+        // Инициализация LineRenderer
+        _lineRenderer = gameObject.GetComponent<LineRenderer>();
+        _lineRenderer.positionCount = 0;
+        _lineRenderer.startWidth = 0.1f;
+        _lineRenderer.endWidth = 0.1f;
+        _lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        _lineRenderer.startColor = Color.red; 
+        _lineRenderer.endColor = Color.green;
     }
 
-
-    //Задание координат куда лететь
     public void SetTargetPoint(Vector3 targetPoint)
     {
-        //Получаем точку куда летим и задаем в автопилот
         _targetPoint = targetPoint;
+    }
+
+    //Задание координат куда лететь
+    public void Flight()
+    {
+        //Получаем точку куда летим и задаем в автопилот
         _isFlying = true;
+        _lineRenderer.enabled = true;
+        _navMeshAgent.speed = _speed;
         _navMeshAgent.SetDestination(_targetPoint);
+        UpdateLenghtPath();
+    }
+
+    private void UpdateLenghtPath()
+    {
+        pathLength = 0;
+        if (_navMeshAgent.CalculatePath(_targetPoint, _path))
+        {
+            Vector3[] corners = _path.corners;
+            _path.GetCornersNonAlloc(corners);
+
+            for (int i = 1; i < corners.Length; i++)
+            {
+                Vector3 segmentStart = corners[i - 1];
+                Vector3 segmentEnd = corners[i];
+                pathLength += Vector3.Distance(segmentStart, segmentEnd);
+            }
+        }
+        _flightTime = pathLength / _speed;
     }
 
     //Время полёта (иногда немного задерживается)
@@ -65,25 +104,32 @@ public class SpaceshipController : MonoBehaviour
         else
             flightTimeText.text = string.Format("Оставшееся время полёта: {0:00}:{1:00}", minutes, seconds);
     }
+    
+    //Отображение линии
+    private void UpdateLineRender()
+    {
+        _lineRenderer.positionCount = _navMeshAgent.path.corners.Length;
+        for (int i = 0; i < _navMeshAgent.path.corners.Length; i++)
+        {
+            _lineRenderer.SetPosition(i, _navMeshAgent.path.corners[i]);
+        }
+    }
 
     //Полёт
     private void Update()
     {
         if (_isFlying)
         {
-            pathLength = _navMeshAgent.remainingDistance;
-            _navMeshAgent.speed = _speed;
-            _flightTime = pathLength / _speed;
-
             _flightTime -= Time.deltaTime;
             UpdateFlightTimeDisplay(_flightTime);
 
+            UpdateLineRender();
             if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance < 20f)
             {
                 _navMeshAgent.speed = 0f;
+                _lineRenderer.enabled = false;
                 _isFlying = false;
             }
         }
     }
-
 }
