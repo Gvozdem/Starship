@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\SpaceshipContoller.cs" />
     <Compile Include="Assets\Scripts\PlanetContoller.cs" />
     <Compile Include="Assets\Scripts\InventoryManager.cs" />
+    <Compile Include="Assets\Scripts\DragItem.cs" />
     <Compile Include="Assets\Scripts\ModuleItem.cs" />
     <Compile Include="Assets\Scripts\ItemScriptableObject.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />

@@ -9,18 +9,18 @@ public class InventorySlot : MonoBehaviour
 {
     public ItemScriptableObject item;
     public bool isEmpty = true;
-    private GameObject iconGO;
+    public GameObject iconGO;
 
-    public Image icon;
+    public SpaceshipController spaceship;
 
     private void Start()
     {
-        iconGO = transform.GetChild(0).gameObject;
+        iconGO = transform.GetChild(0).GetChild(0).gameObject;
     }
 
     public void SetIcon(Sprite icon)
     {
-        iconGO.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        iconGO.GetComponent<Image>().color = new Color(1, 1, 1, 1f);
         iconGO.GetComponent<Image>().sprite = icon;
     }
     
@@ -28,13 +28,30 @@ public class InventorySlot : MonoBehaviour
     {
         if (item != null)
         {
-            icon.sprite = item.icon;
-            icon.enabled = true;
+            iconGO.GetComponent<Image>().sprite = item.icon;
+            iconGO.GetComponent<Image>().color = new Color(1, 1, 1, 1f);
+            iconGO.GetComponent<Image>().enabled = true;
         }
         else
         {
-            icon.sprite = null;
-            icon.enabled = false;
+            iconGO.GetComponent<Image>().sprite = null;
+            iconGO.GetComponent<Image>().enabled = false;
+        }
+    }
+
+    public void ApplySpeedBoostFromItem()
+    {
+        if (!isEmpty && item != null)
+        {
+            float speedBoost = 0f;
+
+            if (item.itemType == ItemType.Module) // Предполагается, что ItemType.Module обозначает модуль
+            {
+                ModuleItem moduleItem = (ModuleItem)item;
+                speedBoost = moduleItem.GetSpeedUpgrade();
+            }
+            Debug.Log($"{speedBoost}");
+            spaceship.AddSpeed(speedBoost);
         }
     }
 }

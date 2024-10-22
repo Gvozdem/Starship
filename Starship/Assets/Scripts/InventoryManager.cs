@@ -17,8 +17,6 @@ public class InventoryManager : MonoBehaviour
 
     private bool isOpened = false;
 
-    public List<ItemScriptableObject> startingItems;
-
 
     private void Start()
     {
@@ -42,7 +40,7 @@ public class InventoryManager : MonoBehaviour
         AddItem();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
@@ -56,21 +54,22 @@ public class InventoryManager : MonoBehaviour
         UIPanel.SetActive(isOpened);
     }
 
-    private void AddItem(ItemScriptableObject _item = null)
+    private void AddItem()
     {
         foreach (InventorySlot slot in storageSlots)
         {
-            if (slot.isEmpty && _item != null)
+ 
+            if (slot.isEmpty == false)
             {
-                slot.item = _item;
-                slot.isEmpty = false;
-                slot.SetIcon(_item.icon);
-                break;
-            }
-            else if (slot.isEmpty == false && _item == null)
-            {
-                Debug.Log($"Закидывает стартовые слоты");
                 slot.SetIconStart();
+            }
+        }
+        foreach (InventorySlot slot in inventorySlots)
+        {
+            if (slot.isEmpty == false)
+            {
+                slot.SetIconStart();
+                slot.ApplySpeedBoostFromItem();
             }
         }
     }

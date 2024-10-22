@@ -8,6 +8,11 @@ public class ModuleItem : ItemScriptableObject
 {
     public float speedUpgrade;
 
+    public float GetSpeedUpgrade()
+    {
+        return speedUpgrade;
+    }
+
     private void Start()
     {
         itemType = ItemType.Module;

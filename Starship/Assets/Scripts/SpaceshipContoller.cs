@@ -104,7 +104,14 @@ public class SpaceshipController : MonoBehaviour
         else
             flightTimeText.text = string.Format("Оставшееся время полёта: {0:00}:{1:00}", minutes, seconds);
     }
-    
+
+    //Увеличение скорости для модулей (нужна обратная)
+    public void AddSpeed(float speedBoost)
+    {
+        _speed += speedBoost;
+        _navMeshAgent.speed = _speed;
+    }
+
     //Отображение линии
     private void UpdateLineRender()
     {
