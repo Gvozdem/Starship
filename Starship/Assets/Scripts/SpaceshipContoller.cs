@@ -13,7 +13,7 @@ public class SpaceshipController : MonoBehaviour
 {
     //Сам полёт
     private Vector3 _targetPoint;
-    private float _speed = 20.0f;
+    public float _speed = 20.0f;
 
     //Для остановки перед планетой
     private bool _isFlying = false;
@@ -93,7 +93,7 @@ public class SpaceshipController : MonoBehaviour
         _flightTime = pathLength / _speed;
     }
 
-    //Время полёта (иногда немного задерживается)
+    //Время полёта
     private void UpdateFlightTimeDisplay(float flightTime)
     {
         int minutes = Mathf.FloorToInt(flightTime / 60);
@@ -105,10 +105,16 @@ public class SpaceshipController : MonoBehaviour
             flightTimeText.text = string.Format("Оставшееся время полёта: {0:00}:{1:00}", minutes, seconds);
     }
 
-    //Увеличение скорости для модулей (нужна обратная)
+    //Увеличение скорости для модулей
     public void AddSpeed(float speedBoost)
     {
         _speed += speedBoost;
+        _navMeshAgent.speed = _speed;
+    }
+
+    public void RemoveSpeed(float speedBoost)
+    {
+        _speed -= speedBoost;
         _navMeshAgent.speed = _speed;
     }
 
@@ -131,7 +137,7 @@ public class SpaceshipController : MonoBehaviour
             UpdateFlightTimeDisplay(_flightTime);
 
             UpdateLineRender();
-            if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance < 20f)
+            if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance < 22)
             {
                 _navMeshAgent.speed = 0f;
                 _lineRenderer.enabled = false;

@@ -16,6 +16,7 @@ public class InventorySlot : MonoBehaviour
     private void Start()
     {
         iconGO = transform.GetChild(0).GetChild(0).gameObject;
+        spaceship = FindObjectOfType<SpaceshipController>();
     }
 
     public void SetIcon(Sprite icon)
@@ -41,17 +42,37 @@ public class InventorySlot : MonoBehaviour
 
     public void ApplySpeedBoostFromItem()
     {
-        if (!isEmpty && item != null)
+        if (!isEmpty && item != null && transform.parent != null && transform.parent.name == "Inventary")
         {
             float speedBoost = 0f;
 
-            if (item.itemType == ItemType.Module) // Предполагается, что ItemType.Module обозначает модуль
+            if (item.itemType == ItemType.Module)
             {
                 ModuleItem moduleItem = (ModuleItem)item;
                 speedBoost = moduleItem.GetSpeedUpgrade();
             }
-            Debug.Log($"{speedBoost}");
-            spaceship.AddSpeed(speedBoost);
+            if (spaceship != null)
+            {
+                spaceship.AddSpeed(speedBoost);
+            }
+        }
+    }
+    public void RemoveSpeedBoostFromItem()
+    {
+        if (!isEmpty && item != null && transform.parent != null && transform.parent.name == "Storage")
+        {
+            float speedBoost = 0f;
+
+            if (item.itemType == ItemType.Module)
+            {
+                ModuleItem moduleItem = (ModuleItem)item;
+                speedBoost = moduleItem.GetSpeedUpgrade();
+            }
+
+            if (spaceship != null)
+            {
+                spaceship.RemoveSpeed(speedBoost);
+            }
         }
     }
 }

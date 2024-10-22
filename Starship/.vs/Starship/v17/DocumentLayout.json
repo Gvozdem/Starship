@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\Work\\Starship\\Starship\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\dragitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dragitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\itemscriptableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemscriptableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\moduleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moduleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\planetinfowindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planetcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|e:\\work\\starship\\starship\\assets\\scripts\\dragitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dragitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\moduleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moduleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A194D8D2-C593-4DA1-02D5-E5B55A391831}|Assembly-CSharp.csproj|E:\\Work\\Starship\\Starship\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,37 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "InventoryManager.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\InventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryManager.cs",
               "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\InventoryManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T22:26:03.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SpaceshipContoller.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SpaceshipContoller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipContoller.cs",
               "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\SpaceshipContoller.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpaceshipContoller.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAuwGsAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwIsAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T21:58:30.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ItemScriptableObject.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\ItemScriptableObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemScriptableObject.cs",
@@ -89,7 +89,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySlot.cs",
+              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T18:44:03.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DragItem.cs",
+              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\DragItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DragItem.cs",
+              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\DragItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DragItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T19:46:56.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PlanetInfoWindow.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\PlanetInfoWindow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlanetInfoWindow.cs",
@@ -102,33 +128,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlanetContoller.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\PlanetContoller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlanetContoller.cs",
               "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\PlanetContoller.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlanetContoller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T21:59:29.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InventorySlot.cs",
-              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\InventorySlot.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySlot.cs",
-              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\InventorySlot.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySlot.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T18:44:03.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "ModuleItem.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\ModuleItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ModuleItem.cs",
@@ -141,19 +154,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DragItem.cs",
-              "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\DragItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DragItem.cs",
-              "ToolTip": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\DragItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DragItem.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowE0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T19:46:56.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "CameraController.cs",
               "DocumentMoniker": "E:\\Work\\Starship\\Starship\\Assets\\Scripts\\CameraController.cs",
@@ -162,7 +162,8 @@
               "RelativeToolTip": "Assets\\Scripts\\CameraController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAwAcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T20:50:01.061Z"
+              "WhenOpened": "2024-10-08T20:50:01.061Z",
+              "EditorCaption": ""
             }
           ]
         }

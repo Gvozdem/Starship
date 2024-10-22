@@ -44,10 +44,16 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         transform.SetParent(oldSlot.transform);
         transform.SetAsLastSibling();
         transform.position = oldSlot.transform.position;
-        
+
         if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>() != null)
         {
-            ExchangeSlotData(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>());
+            InventorySlot newSlot = eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>();
+            ExchangeSlotData(newSlot);
+            if (newSlot.transform.parent.name == "Inventary" && oldSlot.transform.parent.name != "Inventary")
+                newSlot.ApplySpeedBoostFromItem();
+
+            else if (newSlot.transform.parent.name == "Storage" && oldSlot.transform.parent.name != "Storage")
+                newSlot.RemoveSpeedBoostFromItem();
         }
     }
 
